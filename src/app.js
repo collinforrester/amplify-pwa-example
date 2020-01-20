@@ -19,6 +19,7 @@ async function createNewTodo() {
 }
 
 function onError(err) {
+  alert(err);
   console.error(err);
 }
 
@@ -93,12 +94,15 @@ async function signIn() {
       // This happens when the MFA method is TOTP
       // The user needs to setup the TOTP before using it
       // More info please check the Enabling MFA part
+      alert('MFA Setup required.');
       Auth.setupTOTP(user);
     } else {
       // The user directly signs in
       console.log(user);
+      alert('The user has been signed in. Refresh the page to see existing data or press Add Data to create new data.');
     }
   } catch (err) {
+    alert(err.code);
     if (err.code === "UserNotConfirmedException") {
       // The error happens if the user didn't finish the confirmation step when signing up
       // In this case you need to resend the code and confirm the user
