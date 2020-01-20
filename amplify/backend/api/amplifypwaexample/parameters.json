@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "amplifypwaexample",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authamplifypwaexample344dccc7",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

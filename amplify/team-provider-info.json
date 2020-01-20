@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-pwa-example-dev-20200108144816-authRole",
+            "UnauthRoleArn": "arn:aws:iam::538473421153:role/amplify-pwa-example-dev-20200108144816-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::538473421153:role/amplify-pwa-example-dev-20200108144816-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-pwa-example-dev-20200108144816-deployment",
+            "UnauthRoleName": "amplify-pwa-example-dev-20200108144816-unauthRole",
+            "StackName": "amplify-pwa-example-dev-20200108144816",
+            "StackId": "arn:aws:cloudformation:us-east-2:538473421153:stack/amplify-pwa-example-dev-20200108144816/327a5410-3258-11ea-a58d-064e3beebd9c"
+        },
+        "categories": {
+            "auth": {
+                "amplifypwaexample344dccc7": {}
+            }
+        }
+    }
+}
